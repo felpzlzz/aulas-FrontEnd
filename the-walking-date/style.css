@@ -2,6 +2,15 @@
 :root {
     --cor-sangue: #8b0000;
     --cor-zumbi: #2e8b57;
+    --core-fundo-base: #1a1a1a; 
+    --cor-texto-base: #e0e0e0; 
+    --cor-superficie: #222222;
+    --espaço-arredondada: 8px;
+    --espaço-m: 16px;
+    --espaço-g: 32px;
+    --borda-suave: 8px;
+    --borda-arredondada: 50px;
+
 }
 
 * {
@@ -80,3 +89,167 @@ nav a {
 nav a:hover {
     color:var(--cor-zumbi);
 }
+main {
+    max-width: 1000px; 
+    margin-bottom: 60px;
+}
+section {
+    margin-bottom: 60px;    
+}
+h2 {
+    color: var(--cor-zumbi); 
+    border-bottom: 2px solid var(--cor-sangue);
+    padding-bottom: 10px;
+}
+ #boasvindas {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 12px;
+    filter: grayscale(80%)sepia(30%);
+    transition: filter 0.5s ease;
+}
+img:hover {
+    filter: none;
+}
+figcaption {
+    font-style: italic;
+    color: #888;
+    margin-top: 10px;
+}
+#beneficios {
+     display: flex;
+     gap: 40px;
+
+}
+ol{
+     padding-left: 20px; 
+}
+li{
+    margin-bottom: 15px;
+}
+strong {
+    color: var(--cor-sangue--);
+}
+aside {
+        background-color: #222222;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px dashed var (--cor-zumbi);
+}
+blockquote {
+    font-size: 1.2rem;
+    font-style:italic;
+    border-left: 5px solid var(var(--cor-zumbi));
+    padding-left: 20px;
+}
+cite {
+    display: block;
+    text-align: right;
+    color: #8b0000;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td {
+    border: 1px solid #444;
+    padding: 15px;
+}
+th {
+    background-color: var(--cor-sangue);
+    color: white
+}
+fieldset {
+    border: 2px solid var(--cor-zumbi);
+    padding: 25px; 
+    border-radius: 8px;
+}
+button [type="submit"] {
+    background-color: var(--cor-zumbi);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor:pointer;
+    width: 100%;
+}
+button :hover {
+    background-color:
+    var(--cor-sangue);
+}
+input 
+    [type="text"]
+    input[type="email"]
+    select {
+        width: 100%; 
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        background-color: #333;
+        color:#fff;
+        border: 1px solid #555;
+        
+    }
+
+    input :focus
+    select :focus {
+        outline: none; 
+        border-color: var(--cor-zumbi);
+    }
+label {
+    display: block;
+    margin-battom: 5px;
+    font-weight: bold;
+}
+details {
+    background-color: #222;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid var(--cor-sangue);
+}
+summary {
+    cursor: pointer;
+    font-weight: bold;
+
+}
+details p {
+    margin-top: 15 px;
+    color: #bbb;
+}
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+}
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+        gap: 15px;
+    }
+    #beneficios {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
