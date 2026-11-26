@@ -28,6 +28,7 @@ const campoNome = document.querySelector(
 campoNome.value = 'Maria';
 
 //PASSO 6 - Texto, HTML e atributos
+
 textos[1].innerHTMl = 'Segundos com <em>ênfase</em>';
 
 const campoEmail = document.querySelector(
